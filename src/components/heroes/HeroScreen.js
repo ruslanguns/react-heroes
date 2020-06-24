@@ -22,7 +22,7 @@ export const HeroScreen = ({ history }) => {
   const handleGoBack = () => {
   
     if(history.length <= 2 ) {
-      return history.push('/');
+      return history.push(`${process.env.PUBLIC_URL}/`);
     }
     history.goBack();
 
@@ -34,7 +34,7 @@ export const HeroScreen = ({ history }) => {
       <div className="col-4">
         <img
           className="img-thumbnail animate__animated animate__backInLeft"
-          src={`../assets/heroes/${heroId}.jpg`}
+          src={`${process.env.PUBLIC_URL}/assets/heroes/${heroId}.jpg`}
           alt={superhero} />
       </div>
 

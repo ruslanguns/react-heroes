@@ -12,8 +12,8 @@ export const AppRouter = () => {
     <Router>
       <div>
         <Switch>
-          <Route exact path="/login" component={ LoginScreen } />
-          <Route path="/" component={ DashboardRoutes } />
+          <Route exact path={`${process.env.PUBLIC_URL}/login`} component={ LoginScreen } />
+          <Route path={`${process.env.PUBLIC_URL}/`} component={ DashboardRoutes } />
         </Switch>
       </div>
       

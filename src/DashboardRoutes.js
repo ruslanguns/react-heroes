@@ -15,10 +15,10 @@ export const DashboardRoutes = () => {
       
       <div className="container">
         <Switch>
-          <Route exact path={`${process.env.PUBLIC_URL}/marvel`} component={ MarvelScreen } />
-          <Route exact path={`${process.env.PUBLIC_URL}/dc`} component={ DcScreen } />
-          <Route exact path={`${process.env.PUBLIC_URL}/hero/:heroId`} component={ HeroScreen } />
-          <Route exact path={`${process.env.PUBLIC_URL}/search`} component={ SearchScreen } />
+          <Route exact path="/marvel" component={ MarvelScreen } />
+          <Route exact path="/dc" component={ DcScreen } />
+          <Route exact path="/hero/:heroId" component={ HeroScreen } />
+          <Route exact path="/search" component={ SearchScreen } />
 
           <Redirect to="/marvel" />
         </Switch>
